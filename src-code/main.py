@@ -85,9 +85,7 @@ def main():
             #                                                 'text_score': license_plate_text_score}} 
             
 
-        
-
-    write_csv(results, './test.csv')
+    write_csv(results, '/Users/hungnguyen/TaiLieu/NhanDang/test.csv')
 
 
 if __name__ == '__main__':

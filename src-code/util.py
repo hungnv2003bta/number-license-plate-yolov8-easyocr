@@ -62,13 +62,19 @@ def format_license(text):
     Returns:
         str: Formatted license plate text.
     """
-    license_plate_ = ''
-    for char in text:
-        if char.isalnum():  # Keep alphanumeric characters
-            license_plate_ += char
-        elif char == '-':
-            continue 
-    return license_plate_
+    # license_plate_ = ''
+    # mapping = {0: dict_char_to_int, 1: dict_char_to_int,3: dict_char_to_int, 4: dict_char_to_int, 5: dict_char_to_int, 6: dict_char_to_int, 7: dict_char_to_int,
+    #             2: dict_int_to_char}
+
+    # for j in range(len(text)):
+    #     if text[j].isalnum() or text[j] == '.':
+    #         if j in mapping and text[j] in mapping[j].keys():
+    #             license_plate_ += mapping[j][text[j]]
+    #         else:
+    #             license_plate_ += text[j]
+
+    # return license_plate_
+    return text
 
 def read_license_plate(license_plate_crop):
     detections = reader.readtext(license_plate_crop)
